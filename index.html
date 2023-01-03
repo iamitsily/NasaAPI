@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NasaAPI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-space-shuttle"></i></span><span>NASA API</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iamitsily</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="position-relative py-4 py-xl-5">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-lg-10 col-xl-10 col-xxl-8">
+                    <div class="card">
+                        <div class="card-body p-sm-5">
+                            <h2 class="text-center mb-4">IMAGEN DEL DIA</h2>
+                            <div id="c_multimedia" class="embed-responsive embed-responsive-21by9">
+                                
+                            </div>
+                          <div class="container">
+                                <h3 id="titulo" class="pt-5 text-center">Nasa</h3>
+                                <p id="fecha" class="text-center">Fecha</p>
+                                <p id="descripcion" class="text-center">Imagen de la Nasa</p>
+                            </div>
+                            <br><br><br>
+                           <label class="form-label" style="padding: 10px;">Ingrese la fecha que quiere consultar</label>
+                                <input id="fecha1" class="form-control" type="date" style="margin: 0px;padding: 10px;" min="2018-01-01" max="2022-12-31">
+                               <br> <button onclick="buscarImagen()" class="btn btn-primary d-block w-100" type="submit" style="margin: 0px;padding: 10px;">Enviar</button>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-dark">
+        <div class="container text-white py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"></li>
+                <li class="list-inline-item"></li>
+            </ul>
+            <p class="text-muted mb-0">ilystx1@gmail.com</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
