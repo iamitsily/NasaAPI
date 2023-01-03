@@ -7,8 +7,7 @@ function obtenerDatos(){
     const añoActual = fecha.getFullYear();
     const hoy = fecha.getDate();
     const mesActual = fecha.getMonth() + 1;
-    console.log(añoActual,mesActual,hoy);
-
+    
 //Construir la url para la solicitud
     const Nasa_api = 'aMqBkUOnp8VsvVmUnPPUTLibkgl4yospSEg5s4wY';
     const ruta = `https://api.nasa.gov/planetary/apod?date=${añoActual}-${mesActual}-${hoy}&api_key=${Nasa_api}`;
@@ -20,8 +19,14 @@ function obtenerDatos(){
 //Llamar la función "mostrarDatos" para modifica el index con los datos recibidos
     .then(restultado => mostrarDatos(restultado))
 
-    
+//Hacer que la fecha maxima de consulta sea hasta el dia actual
+    const elegirFecha = document.querySelector('#elegirFecha');
+    mesActualString = mesActual.toString().padStart(2,0);
+    hoyString = hoy.toString().padStart(2,0);
+    elegirFecha.innerHTML = `<input id="fecha1" class="form-control" type="date" style="margin: 0px;padding: 10px;"
+    min="2018-01-01" max="${añoActual}-${mesActualString}-${hoyString}">`;
 }
+
 //Recibimos un json y lo dividimos (esto de acuerdo a la documentación de Nasa)
 function mostrarDatos({date,explanation,media_type,title,url}){
 

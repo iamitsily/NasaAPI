@@ -12,7 +12,11 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fas fa-space-shuttle"></i></span><span>NASA API</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span
+                    class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><i
+                        class="fas fa-space-shuttle"></i></span><span>NASA API</span></a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"></li>
@@ -30,18 +34,23 @@
                         <div class="card-body p-sm-5">
                             <h2 class="text-center mb-4">IMAGEN DEL DIA</h2>
                             <div id="c_multimedia" class="embed-responsive embed-responsive-21by9">
-                                
+
                             </div>
-                          <div class="container">
+                            <div class="container">
                                 <h3 id="titulo" class="pt-5 text-center">Nasa</h3>
                                 <p id="fecha" class="text-center">Fecha</p>
                                 <p id="descripcion" class="text-center">Imagen de la Nasa</p>
                             </div>
                             <br><br><br>
-                           <label class="form-label" style="padding: 10px;">Ingrese la fecha que quiere consultar</label>
-                                <input id="fecha1" class="form-control" type="date" style="margin: 0px;padding: 10px;" min="2018-01-01" max="2022-12-31">
-                               <br> <button onclick="buscarImagen()" class="btn btn-primary d-block w-100" type="submit" style="margin: 0px;padding: 10px;">Enviar</button>
-                          
+                            <label class="form-label" style="padding: 10px;">Ingrese la fecha que quiere
+                                consultar</label>
+                            <div id="elegirFecha" class="embed-responsive embed-responsive-21by9">
+                                
+                            </div>
+                            
+                            <br> <button onclick="buscarImagen()" class="btn btn-primary d-block w-100" type="submit"
+                                style="margin: 0px;padding: 10px;">Enviar</button>
+
                         </div>
                     </div>
                 </div>
